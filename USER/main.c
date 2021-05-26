@@ -224,7 +224,7 @@ int main(void)
 				break;
 			case 2:
 				pitch1 = (int)pitch;
-				pulse1 = 300-(20.0/9.0)*data[pitch1+26];	
+				pulse1 = 300-(20.0/9.0)*data[pitch1+60];	//³õÊ¼Îª0
 				TIM_SetCompare1(TIM1,pulse1);			
 				break;
 			case 3:
