@@ -315,9 +315,9 @@ float data2[80]={0,
 					pulse1 = 300-(20.0/9.0)*x;
 					if(x==-60)
 						flag1 = 1;
-					if(x==-60)
+					if(x==60)
 						flag1 = -1;
-					x -= 2*flag1;
+					x += 0.2*flag1;
 					
 					//¶æ»ú2
 					pulse4 = 300-(20.0/9.0)*y;
@@ -325,7 +325,7 @@ float data2[80]={0,
 						flag2 = -1;
 					if(y == -60)
 						flag2 = 1;
-					y += 2*flag2;
+					y += 0.2*flag2;
 					
 					
 					TIM_SetCompare1(TIM1,pulse1);
